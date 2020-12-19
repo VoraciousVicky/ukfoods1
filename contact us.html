@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AWESOME FORM</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+
+  <style type="text/css">
+    @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+body{
+background-image: url(https://images.unsplash.com/photo-1513346940221-6f673d962e97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);
+background-size: cover;
+}
+
+.wrapper{
+  max-width: 350px;
+  width: 100%;
+  height: auto;
+  background: #eb5b34;
+  padding: 60px 45px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 20px;
+}
+
+.wrapper .title{
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+  color: #fcf0f6;
+}
+
+.wrapper .social_media{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.wrapper .social_media .item{
+  margin: 0 5px;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  border: 2px solid #eeeeee;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #eeeeee;
+  transition: all 0.5s ease;
+}
+
+.wrapper .social_media .item:hover{
+  border: 2px solid black;
+  color: #3aaf9f;
+}
+
+.wrapper .form .input_field{
+  position: relative;
+  margin-bottom: 10px;
+}
+
+  .wrapper .form .input_field .input{
+    width: 100%;
+    padding: 12px;
+    padding-left: 30px;
+    border: none;
+    background: #eeeeee;
+  }
+
+.wrapper .form .btn{
+  width: 70%;
+  margin: 20px auto 0;
+  background: #fcf0f6;
+  text-align: center;
+  padding: 12px;
+  border-radius: 25px;
+}
+
+.wrapper .form .btn a{
+  color: black;
+  text-decoration: none;
+}
+
+.wrapper .form .input_field i{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 14px;
+  color: #1d2120;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #1d2120;
+}
+  </style>
+</head>
+
+<body>
+
+<div class="wrapper">
+  <div class="title">
+    Register Here
+  </div>
+  <div class="social_media">
+    <div class="item">
+      <a href="https://www.facebook.com/"><i class="fab fa-facebook-f" ></i></a>
+    </div>
+    <div class="item">
+      <a href="https://twitter.com/home?lang=en"><i class="fab fa-twitter"></i></a>
+    </div>
+    <div class="item">
+      <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+      </div>
+  </div>
+  
+  <div class="form">
+    <div class="input_field">
+      <input type="text" placeholder="Name" class="input">
+      <i class="fas fa-user"></i>
+    </div>
+    <div class="input_field">
+      <input type="text" placeholder="Email" class="input">
+      <i class="far fa-envelope"></i>
+    </div>
+    <div class="input_field">
+      <input type="number" placeholder="Ph No" class="input">
+      <i class="fas fa-mobile-alt"></i>
+    </div>
+    <div class="btn">
+      <a href="#">Register</a>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
